@@ -1,0 +1,359 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &163116
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 443262}
+  - 212: {fileID: 21286968}
+  - 61: {fileID: 6130416}
+  - 114: {fileID: 11483206}
+  - 114: {fileID: 11485028}
+  - 114: {fileID: 11440874}
+  - 114: {fileID: 11404990}
+  - 114: {fileID: 11420432}
+  - 114: {fileID: 11402774}
+  - 114: {fileID: 11428080}
+  - 114: {fileID: 11455174}
+  - 114: {fileID: 11435420}
+  - 114: {fileID: 11465858}
+  - 114: {fileID: 11466474}
+  - 114: {fileID: 11429548}
+  - 114: {fileID: 11401560}
+  m_Layer: 0
+  m_Name: QuestionDummy
+  m_TagString: NPC
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &198100
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 432688}
+  - 212: {fileID: 21284030}
+  m_Layer: 0
+  m_Name: ExclamationMark (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &432688
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 198100}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.0066666603, y: 0.38333333, z: 0}
+  m_LocalScale: {x: 0.33333334, y: 0.33333334, z: 1}
+  m_Children: []
+  m_Father: {fileID: 443262}
+  m_RootOrder: 0
+--- !u!4 &443262
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 163116}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.27, y: -1.9, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 432688}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!61 &6130416
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 163116}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 0.5625, y: 0.5625}
+--- !u!114 &11401560
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 163116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd6988a32129dcc49b39850261a84cd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _stringCounterScript: {fileID: 11483206}
+  _dialogueText: {fileID: 0}
+--- !u!114 &11402774
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 163116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e78f95f7a9c714a4daa10b0ae342f58e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _checkDialogueScript: {fileID: 0}
+  _stringCounterScript: {fileID: 11483206}
+  _animateText: {fileID: 11428080}
+  _stringsHolder: {fileID: 11440874}
+  _questionStrings: {fileID: 11404990}
+  _textDelay: 0
+  _timeBetweenText: 0.07
+--- !u!114 &11404990
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 163116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 261458b3ac01ff64c9afc527c6e949ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _questionStrings:
+  - Because of the dialogue assignment.
+  - Shut up! You're just a program!
+  _answerOneStrings:
+  - Oh. Yeah.
+  - That's right.
+  - '...I''ve got nothing to say now.'
+  _answerTwoStrings:
+  - Hey! That's rude!
+  - '...You''re right though.'
+--- !u!114 &11420432
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 163116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7c60a0909175754f98b36b1955334a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _animateText: {fileID: 11428080}
+  _textToDisplayOn: {fileID: 0}
+--- !u!114 &11428080
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 163116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5216ea85311344843a1360830feae548, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &11429548
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 163116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a913c651aaeeb3428ea02374d37c517, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _stringCounterScript: {fileID: 11483206}
+  _questionTexts:
+  - {fileID: 0}
+  - {fileID: 0}
+  _questionNeutralColor: {r: 1, g: 1, b: 1, a: 1}
+  _questionHoverColor: {r: 1, g: 0, b: 0, a: 1}
+  _questionInt: 0
+--- !u!114 &11435420
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 163116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5ac0796114007744a53ce900d413ee9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textSound: {fileID: 0}
+  _animateText: {fileID: 11428080}
+  _playSoundWhilePlaying: 1
+--- !u!114 &11440874
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 163116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00d96886993140e4a8f4b7e8be9d7f63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dialogueStrings:
+  - Boy, it's kind of chilly today.
+  - I should have brought my sweater with me.
+  - Why am I even here?
+--- !u!114 &11455174
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 163116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 217c0912e45116a40b61eba68c167ac4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _animateTextScript: {fileID: 11428080}
+  _stringCounterScript: {fileID: 11483206}
+  _textPanel: {fileID: 0}
+--- !u!114 &11465858
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 163116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c44f90e04cb9ed040865165a6eb4d59a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _stringCounterScript: {fileID: 11483206}
+  _triggerQuestionScript: {fileID: 11466474}
+  _questionPanelObject: {fileID: 0}
+  _questionStringsObject: {fileID: 11404990}
+  questionText:
+  - {fileID: 0}
+  - {fileID: 0}
+--- !u!114 &11466474
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 163116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0ac56ecea75f724699ba67da12423d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _stringCounterScript: {fileID: 11483206}
+  _questionStringsScript: {fileID: 11404990}
+  _questionSelectorScript: {fileID: 11429548}
+  _animateTextScript: {fileID: 11428080}
+  _textDelay: 1
+  _timeBetweenText: 0.07
+--- !u!114 &11483206
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 163116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a02d3a2517363248a01f8487d5ea160, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _animateText: {fileID: 11428080}
+  _stringsHolder: {fileID: 11440874}
+  _questionStrings: {fileID: 11404990}
+  _triggerQuestionScript: {fileID: 11466474}
+  _stringCounter: 0
+  _questionCounter: 0
+--- !u!114 &11485028
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 163116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 801a9bf5e73456e4c8e109fa63a9aa41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _exclamationMark: {fileID: 198100}
+--- !u!212 &21284030
+SpriteRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 198100}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_ReflectionProbeUsage: 0
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 88772f57cea13e249b383c9e3a1a250d, type: 3}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+--- !u!212 &21286968
+SpriteRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 163116}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_Materials:
+  - {fileID: 2100000, guid: cf9ba488315c03f43896d26853f607f1, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_ReflectionProbeUsage: 0
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 163116}
+  m_IsPrefabParent: 1
