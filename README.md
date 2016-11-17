@@ -8,7 +8,7 @@
 
 Interesting code snippets:
 
-[UnderWater.shader](https://github.com/FerryElbaghdadi/2DShaders/blob/master/Assets/Shaders/UnderWater.shader
+[UnderWater.shader](https://github.com/FerryElbaghdadi/2DShaders/blob/master/Assets/Shaders/UnderWater.shader)
 
 [UnderWaterEffect.cs](https://github.com/FerryElbaghdadi/2DShaders/blob/master/Assets/Scripts/System/Shaders/UnderWaterEffect.cs)
 
